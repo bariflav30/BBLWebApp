@@ -1,0 +1,77 @@
+body {
+	color: #000;
+	background-color: #fff;
+	font: 100%/1.2 sans-serif;
+}
+
+:link {
+	color: #1593D3;
+}
+
+:visited {
+	color: #38C;
+}
+/* Logo */
+.fixed-ratio-resize { /* basic responsive img */
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* IE8 */
+}
+
+.formRight {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px #E8E8E8 inset;
+    height: 38px;
+    margin: 0 0 0 10px;
+    padding: 10px;
+    width: 85px;
+}
+
+.btn-warning {
+  margin-right: 5px;
+  float: center;
+}
+
+table td {
+border-left: 1px solid #eee;
+border-right: 1px solid #eee;
+}
+
+button{
+  float: right;
+}
+
+.btn-success{
+  margin-top: 5px;
+}
+
+.form-control {
+  font-size: 10px !important;
+  text-align: left;
+}
+
+hr{
+  margin-top: 50px !important;
+  color: #333 !important;
+}
+
+/* Customized Demo CSS for our Demo Tables */
+.tablesaw-columntoggle td.title a,
+.tablesaw-swipe td.title a {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.tablesaw-swipe td.title a {
+	max-width: 10em;
+	max-width: 40vw;
+}
+@media (min-width: 40em) {
+	td.title {
+		max-width: 12em;
+	}
+}
+

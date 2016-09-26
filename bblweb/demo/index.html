@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BBL Web Form</title>
+
+	<link rel="stylesheet" href="../dist/tablesaw.css">
+	<link rel="stylesheet" href="demo.css">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="//filamentgroup.github.io/demo-head/demohead.css">
+
+	<script src="../dist/dependencies/jquery.js"></script>
+	<script src="../dist/tablesaw.js"></script>
+	<script src="../dist/tablesaw-init.js"></script>
+	<script src="//filamentgroup.github.io/demo-head/loadfont.js"></script>
+    <style>
+
+</style>
+    
+</head>
+<img src="../images/banner.png" alt="Banner" class="fixed-ratio-resize" />
+<body>
+	<div class="container">
+	<h4>Midway Atoll National Wildlife Refuge Banding Data sheet (for new: metal or metal and color bands).</h4>
+
+	<p>Date and intials for data entered into Excel for import to bandit:</p>
+
+	<p>Disposition: 300 = Normal bird with metal band only or 301 = metal and color band. Island = SIMA: Sand, EIMA: Eastern, SPMA: Spit. AGE: L = local for chick or fledging. AHY = adult, subadult, unknown. Sex = M, F, or U. Bander = FWS Staff. Color Band example: R/W red band with white letter and numbers. Write only first 7 numbers of the bending string at top of data sheet. Species: LAAL, BFAL, RTTR, etc.</p>
+    
+    
+	<div class="docs-main">
+		
+
+		<table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap data-tablesaw-swipe-media="(min-width: 40em)">
+			<thead>
+				<tr>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist" style="width:13%;">Disp</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3" style="width:10%;">Band</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2" style="width:10%;">Old Band</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">MLeg</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Spec</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3" >HO</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">PC</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="6" >Status</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="7">MTC</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">MCC</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="8">MCC</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="9">MAMC</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">MTR</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">MCR</th>
+          
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">MCR</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">MAMR</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Plot ID</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Nest</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">NLoc</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Notes</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Permit</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Date</th>
+          
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4" >Island</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3" >Age</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1" >Sex</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3" >Sweep</th>
+          
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Observer</th>
+          
+          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3" style="width:8%;">Photo</th>
+          
+          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3" style="width:8%;">Action</th>
+          
+				</tr>
+			</thead>
+      
+			<tbody>
+				<tr>
+                    <td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="1">6</option>
+    <option value="2">8</option>
+    <option value="3">4</option>
+    <option value="3">D</option>
+    <option value="3">S</option>
+    <option value="3">1</option>
+    <option value="3">9</option>  
+    <option value="3">5</option> 
+    <option value="3">R</option>                  
+</select></td>
+                    <td><input class="form-control" name="band[]" type="text" placeholder="Band No." /></td>
+          
+                    <td><input class="form-control" name="date[]" type="text" placeholder="Replace" /></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="1">R</option>
+    <option value="2">L</option>                
+</select></td>
+          
+                    <td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="1">BFAL</option>
+    <option value="2">LAAL</option>                
+</select></td>
+          
+  <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="1">00</option>
+        <option value="2">01</option>
+        <option value="1">02</option>
+        <option value="2">03</option>
+        <option value="1">04</option>
+        <option value="2">10</option>
+        <option value="1">12</option>
+        <option value="2">13</option>
+        <option value="1">14</option>
+        <option value="2">15</option>
+        <option value="1">16</option>
+        <option value="2">17</option>
+        <option value="1">21</option>
+        <option value="2">23</option>
+        <option value="1">24</option>
+        <option value="2">26</option>
+        <option value="1">27</option>
+        <option value="2">28</option>
+        <option value="1">29</option>
+        <option value="2">30</option>
+        <option value="1">33</option>
+        <option value="2">36</option>
+        <option value="1">39</option>
+        <option value="2">42</option>
+        <option value="1">44</option>
+        <option value="2">45</option>
+        <option value="1">50</option>
+        <option value="2">52</option>
+        <option value="1">54</option>
+        <option value="2">56</option>
+        <option value="1">57</option>
+        <option value="2">58</option>
+        <option value="1">61</option>
+        <option value="2">62</option>
+        <option value="1">63</option>
+        <option value="2">64</option>
+        <option value="1">66</option>
+        <option value="2">70</option>
+        <option value="1">91</option>
+        <option value="2">97</option>
+        <option value="1">98</option>
+</select></td>
+          
+    <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="1">03</option>
+        <option value="2">04</option>
+        <option value="1">05</option>
+        <option value="2">07</option>
+        <option value="1">08</option> 
+   </select></td>
+          
+   <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="1">300</option>
+        <option value="2">301</option>
+        <option value="1">307</option>
+        <option value="2">308</option>
+        <option value="1">318</option>
+        <option value="2">319</option>
+        <option value="1">325</option>
+        <option value="2">330</option>
+        <option value="1">500</option>
+        <option value="2">501</option>
+        <option value="1">507</option>
+        <option value="2">508</option>
+        <option value="1">518</option>
+        <option value="2">519</option>
+        <option value="1">525</option>
+        <option value="2">530</option>
+        <option value="1">540</option>
+        <option value="2">541</option>
+        <option value="1">380</option>
+        <option value="2">380</option>
+        <option value="1">390</option>
+        <option value="2">580</option>
+        <option value="1">581</option>
+        <option value="2">590</option>
+        <option value="1">314</option>
+        <option value="2">315</option>
+        <option value="1">316</option>
+        <option value="2">317</option>
+        <option value="1">314</option>
+        <option value="2">316</option>
+        <option value="1">317</option>
+        <option value="2">514</option>
+        <option value="1">515</option>
+        <option value="2">516</option>
+        <option value="1">517</option>
+</select></td>
+          
+<td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="1">08A</option>
+        <option value="2">08B</option>
+        <option value="1">08C</option>
+        <option value="2">08D</option>
+        <option value="1">08E</option>
+        <option value="2">80A</option>
+        <option value="1">80B</option>
+        <option value="2">80C</option>
+        <option value="1">80H</option>
+        <option value="2">80J</option>
+        <option value="1">81A</option>
+        <option value="2">81B</option>
+        <option value="1">81C</option>
+        <option value="2">81H</option>
+        <option value="1">81J</option>
+        <option value="2">90A</option>
+        <option value="1">90B</option>
+        <option value="2">90C</option>
+        <option value="1">90H</option>
+        <option value="2">90J</option>
+  </select></td>
+          
+                    <td><input class="form-control" name="sex[]" type="text" placeholder="Code" /></td>
+          
+<td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="1">R/W</option>
+        <option value="2">G/W</option>
+        <option value="1">U/W</option>
+        <option value="2">B/W</option>
+        <option value="1">Y/B</option> 
+        <option value="1">W/B</option>
+        <option value="2">O/B</option>
+        <option value="1">P/W</option>
+        <option value="2">N/W</option>      
+</select></td>
+          
+<td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="1">01A</option>
+        <option value="2">01B</option>
+        <option value="1">08A</option>
+        <option value="2">08B</option>
+        <option value="1">08C</option>
+        <option value="2">08D</option>
+        <option value="1">08E</option>
+        <option value="2">80A</option>
+        <option value="1">80B</option>
+        <option value="2">80C</option>
+        <option value="1">80H</option>
+        <option value="2">80J</option>
+        <option value="1">81A</option>
+        <option value="2">81B</option>
+        <option value="1">81C</option>
+        <option value="2">81H</option>
+        <option value="1">81J</option>
+        <option value="2">90A</option>
+        <option value="1">90B</option>
+        <option value="2">90C</option>
+        <option value="1">90H</option>
+        <option value="2">90J</option>
+  </select></td>
+          
+  <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="1">01A</option>
+        <option value="2">01B</option>
+        <option value="1">08A</option>
+        <option value="2">08B</option>
+        <option value="1">08C</option>
+        <option value="2">08D</option>
+        <option value="1">08E</option>
+        <option value="2">80A</option>
+        <option value="1">80B</option>
+        <option value="2">80C</option>
+        <option value="1">80H</option>
+        <option value="2">80J</option>
+        <option value="1">81A</option>
+        <option value="2">81B</option>
+        <option value="1">81C</option>
+        <option value="2">81H</option>
+        <option value="1">81J</option>
+        <option value="2">90A</option>
+        <option value="1">90B</option>
+        <option value="2">90C</option>
+        <option value="1">90H</option>
+        <option value="2">90J</option>
+  </select></td>
+                    <td><input class="form-control" name="nest[]" type="text" placeholder="Code" /></td>
+          
+  <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="1">R/W</option>
+        <option value="2">G/W</option>
+        <option value="1">U/W</option>
+        <option value="2">B/W</option>
+        <option value="1">Y/B</option> 
+        <option value="1">W/B</option>
+        <option value="2">O/B</option>
+        <option value="1">P/W</option>
+        <option value="2">N/W</option>      
+</select></td>
+          
+ <td><select class="formRight">
+        <option value="" selected disabled>Select</option>
+        <option value="1">01A</option>
+        <option value="2">01B</option>
+        <option value="1">08A</option>
+        <option value="2">08B</option>
+        <option value="1">08C</option>
+        <option value="2">08D</option>
+        <option value="1">08E</option>
+        <option value="2">80A</option>
+        <option value="1">80B</option>
+        <option value="2">80C</option>
+        <option value="1">80H</option>
+        <option value="2">80J</option>
+        <option value="1">81A</option>
+        <option value="2">81B</option>
+        <option value="1">81C</option>
+        <option value="2">81H</option>
+        <option value="1">81J</option>
+        <option value="2">90A</option>
+        <option value="1">90B</option>
+        <option value="2">90C</option>
+        <option value="1">90H</option>
+        <option value="2">90J</option>
+  </select></td>
+          
+                    <td><input class="form-control" name="present[]" type="text" placeholder="Plot ID" /></td>
+          
+                    <td><input class="form-control" name="how[]" type="text" placeholder="Nest" /></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="1">R</option>
+    <option value="2">S</option> 
+    <option value="3">B</option>
+</select></td>
+
+<td><input class="form-control" name="marker[]" type="text" placeholder="Remarks" /></td>
+
+<td><input class="form-control" name="code[]" type="text" placeholder="Permit" /></td>
+          
+<td><input class="form-control" name="additional[]" type="text" placeholder="Date" /></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="1">SIMA</option>
+    <option value="2">EIMA</option> 
+    <option value="3">SPMA</option>
+</select></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+</select></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+</select></td>
+          
+<td><select class="formRight">
+    <option value="" selected disabled>Select</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+</select></td>
+          
+<td><input class="form-control" name="observer[]" type="text" placeholder="Observer" /></td>
+          
+<td><button class="btn btn-primary btn-add" type="button">
+     <i class="glyphicon glyphicon-camera gs"></i> 
+     <b>File</b>
+  </button></td>
+          
+   <td><button class="btn btn-info btn-add" type="button">
+     <i class="glyphicon glyphicon-plus gs"></i> 
+     <b> Add</b>
+  </button></td>
+          
+         </tr>    
+			</tbody>
+		</table>
+        
+   
+    <hr>
+      
+        <table class="tablesaw" data-tablesaw-mode="swipe" data-tablesaw-minimap data-tablesaw-swipe-media="(min-width: 40em)">
+			<thead>
+				<tr>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist" style="width:15%;">Disp</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Band</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Old Band</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">MLeg</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Spec</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">HO</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">PC</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="6">Status</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="7">MTC</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">MCC</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="8">MCC</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="9">MAMC</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">MTR</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">MCR</th>
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">MCR</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">MAMR</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Plot ID</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Nest</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">NLoc</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Notes</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Permit</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Date</th>
+                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Island</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Age</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Sex</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Sweep</th>
+					<th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Observer</th>
+          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Photo</th>
+          <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Action</th>
+				</tr>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>BFAL</td>
+            		<td>16</td>
+            		<td>4/24/14</td>
+            		<td>SIMA</td>
+            		<td>B7</td>
+            		<td>R</td>
+            		<td>R/W</td>
+            		<td>16</td>
+            		<td>L</td>
+            		<td>U</td>
+            		<td>BFAL</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+	            	<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            </tr>
+				<tr>
+					<td>BFAL</td>
+            		<td>16</td>
+            		<td>4/24/14</td>
+            		<td>SIMA</td>
+            		<td>B7</td>
+            		<td>R</td>
+            		<td>R/W</td>
+            		<td>16</td>
+            		<td>L</td>
+            		<td>U</td>
+            		<td>BFAL</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+	            	<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+           </tr>
+				<tr>
+					<td>BFAL</td>
+            		<td>16</td>
+            		<td>4/24/14</td>
+            		<td>SIMA</td>
+            		<td>B7</td>
+            		<td>R</td>
+            		<td>R/W</td>
+            		<td>16</td>
+            		<td>L</td>
+            		<td>U</td>
+            		<td>BFAL</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+	            	<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            </tr>
+				<tr>
+					<td>BFAL</td>
+            		<td>16</td>
+            		<td>4/24/14</td>
+            		<td>SIMA</td>
+            		<td>B7</td>
+            		<td>R</td>
+            		<td>R/W</td>
+            		<td>16</td>
+            		<td>L</td>
+            		<td>U</td>
+            		<td>BFAL</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+	            	<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            	</tr>
+				<tr>
+					<td>BFAL</td>
+            		<td>16</td>
+            		<td>4/24/14</td>
+            		<td>SIMA</td>
+            		<td>B7</td>
+            		<td>R</td>
+            		<td>R/W</td>
+            		<td>16</td>
+            		<td>L</td>
+            		<td>U</td>
+            		<td>BFAL</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+	            	<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+            		<td>N/A</td>
+				</tr>
+			</tbody>
+		</table>
+        <button class="btn btn-success" type="button">
+           <b>Save</b>
+        </button>	
+        <button class="btn btn-warning" type="submit">
+           <b> Sent </b>
+        </button>
+        
+	</div>
+   </div> 
+</body>
+</html>
